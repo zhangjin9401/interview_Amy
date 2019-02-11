@@ -19,11 +19,11 @@
         export default busEvent;
     -3 在组件A中，指定事件：
         handleClick(){
-            busEvent.$emit('addCouunt');
+            busEvent.$emit('addCount');
         }
     -3 在组件B中，监听事件:
         mounted(){
-            busEvent.$on('busEvent',()=>{
+            busEvent.$on('addCount',()=>{
                 this.count+=1;
             })
         },

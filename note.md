@@ -28,3 +28,12 @@
     27. 安卓和ios模拟器
     28. 2019年个税
     29. var  函数声明提升 作用域 扫描链接wifi
+    30. 遇到的问题和坑
+    31. cookie 和session 
+    32. 页面的布局
+    33. import 和 export　
+    34. 跨域
+    35. 封装tosat组件，是怎么做到的
+    36. promise 和 await 
+    37. 实现滚动加载
+    

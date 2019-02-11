@@ -1,9 +1,11 @@
-function sum(arr) {
-    let sum = 0;
-    for(let i = 0 ; i < arr.length; i ++){
-        sum += arr[i];
-    }
-    return sum
+module: {
+    rules: [{
+        test: /\.less$/,
+        use: ['style-loader', {
+            loader: 'css-loader',
+            options: {
+                importLoaders: 1
+            }
+        }, 'less-loader']
+    }, ]
 }
-
-console.log(sum([1,2,3,4]))

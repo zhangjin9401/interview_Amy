@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <first-vue>
+        </first-vue>
+        <login-vue></login-vue>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    let loginVue = Vue.extend({
+        template:'<h1>我是登录组件</h1>'
+    })
+    Vue.component('first-vue',{
+        template:'<div><h1>我是一个公共组件</h1></div>',
+        components:{
+            'login-vue':loginVue
+        }
+    })
+    let vm = new Vue({
+        el: '#app',
+        components:{
+            loginVue
+        }
+    })
+</script>
